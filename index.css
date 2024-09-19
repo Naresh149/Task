@@ -1,0 +1,110 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling to center the Task Manager */
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.task-manager {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Card styling for the input section */
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form input styling */
+.input {
+  padding: 10px;
+  border-radius: 3px;
+  width: calc(100% - 120px); /* Ensure the input fits with the button */
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: rgba(255, 166, 0, 0.936);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.submit:hover {
+  background-color: rgba(255, 140, 0, 0.936);
+}
+
+/* Task list container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each task item styling */
+.task-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Button styling inside task items */
+.complete-btn,
+.delete-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Styling for complete button */
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}
+
+/* Styling for delete button */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
